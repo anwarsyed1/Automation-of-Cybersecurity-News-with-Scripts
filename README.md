@@ -22,81 +22,36 @@ Import these two libraries in order to parse the data from the sites: <br/>
 <br />
 <br />
 I then create a function with a menu for the user to select from of listed websites by inputting an integer value:  <br/>
-<img src="https://imgur.com/dDM9Hp6.png" height="80%" width="80%" alt="set up"/>
+<img src="https://imgur.com/osuhTTQ.png" height="80%" width="80%" alt="set up"/>
 <br />
 <br />
-: <br/>
-<img src="https://imgur.com/WVrBleM.png" height="80%" width="80%" alt="set up"/>
+The feedparser parses through the websites based on the input of the user, the loop then adds the 5 most recent links and titles into the array. Format the article from the list: <br/>
+<img src="https://imgur.com/YJUSbSE.png" height="80%" width="80%" alt="set up"/>
 <br />
 <br />
-Connect the Log Analytics Workspace to the VM:  <br/>
-<img src="https://imgur.com/cvc2aWg.png" height="80%" width="80%" alt="set up"/>
+When the user wants to open the website link, they input a number 1-5 of which link they want to open. The while loop takes the input as an integer, then uses the webbrowser import to open the desired link:  <br/>
+<img src="https://imgur.com/UbPylCr.png" height="80%" width="80%" alt="set up"/>
 <br />
 <br />
-Run the VM and connect to it via Remote Desktop Connection:  <br/>
-<img src="https://imgur.com/cywVdub.png" height="80%" width="80%" alt="set up"/>
+Then I formatted to make it more user friendly:  <br/>
+<img src="https://imgur.com/N2RKxEc.png" height="80%" width="80%" alt="set up"/>
 <br />
 <br />
-Turn off Windows Firewall within the RDC VM:  <br/>
-<img src="https://imgur.com/blLn2D8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Now lets run it!:  <br/>
+<img src="https://imgur.com/0heCPBw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Test ping from personal computer to VM:  <br/>
-<img src="https://imgur.com/pfj1r2L.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+After making a choice it lists out 5 recent articles, then prompts which we'd like to open:  <br/>
+<img src="https://imgur.com/kWYVjJE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Get an API Key if you dont already have one (ipgeolocation.io):  <br/>
-<img src="https://imgur.com/55RDEz9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+As you can see, once the code executes it opens up your selection in a web browser:  <br/>
+<img src="https://imgur.com/NbzCk5n.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
+
 <br />
-Run custom script with your API Key on Windows PowerShell ISE to get Geo Data from attackers :  <br/>
-<img src="https://imgur.com/IZv9ErM.png" height="80%" width="80%" alt="Cyber Attack Event Management"/>
-<br />
-<br />
-Save script as log file and it'll create a txt file with all the failed login attempts Geo Data :  <br/>
-<img src="https://imgur.com/BTvCbJb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Create a custom log thats linked to the txt file with all the failed login attempts Geo Data:  <br/>
-<img src="https://imgur.com/pOMAErE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Using the SQL Query in logs, observe the data from the custom log:  <br/>
-<img src="https://imgur.com/feqrZqR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Extract the fields from raw custom logs:  <br/>
-<img src="https://imgur.com/jLsYsXo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Check custom fields to confirm before testing:  <br/>
-<img src="https://imgur.com/AHNYV0x.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Test new custom fields which were extracted to see if they collect the data:  <br/>
-<img src="https://imgur.com/rjCRuf2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Create Microsoft Sentinel:  <br/>
-<img src="https://imgur.com/Ij2CQgX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Within Microsoft Sentinel, setup a map in workbooks using longitude and latitude:  <br/>
-<img src="https://imgur.com/TnOTZlc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Use the following SQL Query to isolate which data to be shown, and the following map settings to display on world map:  <br/>
-<img src="https://imgur.com/jkC9uK0.png" height="80%" width="80%" alt="workbook setup"/>
-<img src="https://imgur.com/TAeiN3Q.png" height="80%" width="80%" alt="workbook setup"/>
-<img src="https://imgur.com/F7WlgYG.png" height="80%" width="80%" alt="workbook setup"/>
-<br />
-<br />
-After a couple hours the VM will be found by the cyber attackers of the world. Now you can observe Geo Data from where your VM is being breached!:  <br/>
-<img src="https://imgur.com/srMTOOG.png" height="80%" width="80%" alt="Cyber Attack Event Management"/>
-<br />
-<br />
-This Concludes This Microsoft Azure SIEM Project!
-NOTE: You can toggle map setting to display other custom fields  <br/>
+This Concludes This Autoomation Python Script Project!
+NOTE: You can add onto this and make it more complex, or use these methonds to automate other tasks!  <br/>
 <br />
 </p>
 
