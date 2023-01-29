@@ -2,7 +2,7 @@
 <img src="https://imgur.com/DTMxOQ6.png" height="80%" width="80%" alt="diagram"/>
 
 <h2>Description</h2>
-In this project, I create a Python Script that automates the 5 most recent cybersecurity news from a list of popular cybersecurity websites 
+In this project, I create a Python Script that parses through RSS feeds to automate the 5 most recent cybersecurity news from a list of popular cybersecurity websites. We code using Virtual Studio Code (any python environment can be used) and couple libraries that you may need to import. Lets get right into this step by step guide!
 <br />
 
 
